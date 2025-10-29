@@ -3,7 +3,43 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35707.178 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-Algoritmos_Y_Estructuras", "01-Algoritmos_Y_Estructuras\01-Algoritmos_Y_Estructuras.csproj", "{15913E55-F925-4A8D-98EC-E2E4CE0C23A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejecutor_Sandbox", "Ejecutor_Sandbox\Ejecutor_Sandbox.csproj", "{D140F640-03C6-44A8-9A2D-653AE241D149}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Principios_SOLID_Y_Patrones", "02_Principios_SOLID_Y_Patrones\02_Principios_SOLID_Y_Patrones.csproj", "{EE5AD837-A33A-45C5-BB73-0720C6FAB053}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Algoritmos_Y_Estructuras.Tests", "01_Algoritmos_Y_Estructuras\01_Algoritmos_Y_Estructuras.Tests.csproj", "{40207691-B08D-489B-8200-C0899BC4384E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Principios_SOLID_Y_Patrones.Tests", "02_Principios_SOLID_Y_Patrones.Tests\02_Principios_SOLID_Y_Patrones.Tests.csproj", "{037353D2-CFF0-4D48-BBF3-EAF8191EE0B2}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15913E55-F925-4A8D-98EC-E2E4CE0C23A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15913E55-F925-4A8D-98EC-E2E4CE0C23A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15913E55-F925-4A8D-98EC-E2E4CE0C23A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15913E55-F925-4A8D-98EC-E2E4CE0C23A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D140F640-03C6-44A8-9A2D-653AE241D149}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D140F640-03C6-44A8-9A2D-653AE241D149}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D140F640-03C6-44A8-9A2D-653AE241D149}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D140F640-03C6-44A8-9A2D-653AE241D149}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE5AD837-A33A-45C5-BB73-0720C6FAB053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE5AD837-A33A-45C5-BB73-0720C6FAB053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE5AD837-A33A-45C5-BB73-0720C6FAB053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE5AD837-A33A-45C5-BB73-0720C6FAB053}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40207691-B08D-489B-8200-C0899BC4384E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40207691-B08D-489B-8200-C0899BC4384E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40207691-B08D-489B-8200-C0899BC4384E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40207691-B08D-489B-8200-C0899BC4384E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{037353D2-CFF0-4D48-BBF3-EAF8191EE0B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{037353D2-CFF0-4D48-BBF3-EAF8191EE0B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{037353D2-CFF0-4D48-BBF3-EAF8191EE0B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{037353D2-CFF0-4D48-BBF3-EAF8191EE0B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
