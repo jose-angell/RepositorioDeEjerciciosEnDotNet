@@ -7,7 +7,7 @@ Console.WriteLine("Hello, Sandbox!");
 
 
 
-var sum = new TwoSum();
+var sum = new ValidPalindrome();
 
-var result = sum.Solution(new int[] { 2, 7, 11, 15 }, 9);
-Console.WriteLine($"Indices: {result[0]}, {result[1]}");
+var result = sum.Solution("A man, a plan, a canal: Panama");
+Console.WriteLine(result);
