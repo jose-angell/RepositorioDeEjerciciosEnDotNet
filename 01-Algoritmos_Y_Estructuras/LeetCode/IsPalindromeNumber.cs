@@ -17,7 +17,7 @@ namespace _01_Algoritmos_Y_Estructuras.LeetCode
         {
             string val = x.ToString();
             int left = 0;
-            int right = val.Length;
+            int right = val.Length - 1;
             while (left <= right)
             {
                 if (val[left] != val[right])
