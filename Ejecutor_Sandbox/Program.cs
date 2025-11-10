@@ -7,7 +7,7 @@ Console.WriteLine("Hello, Sandbox!");
 
 
 
-var sum = new ValidPalindrome();
+var act = new BestTimeToByAndSellStock();
 
-var result = sum.Solution("A man, a plan, a canal: Panama");
+var result = act.Solution([7, 1, 5, 3, 6, 4]);
 Console.WriteLine(result);
