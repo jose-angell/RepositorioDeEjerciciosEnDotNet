@@ -23,7 +23,7 @@ using System.Threading.Tasks;
  * 1. Inicializar: Crear un Dictionary<char, int> para almacenar el valor de cada símbolo
  * 2. Inicializar Resultado: total = 0
  * 3. Inicializar Puntero: Recorrer la cadena s desde el inicio (izquierda)
- * 4. Lógica del Loop (Iteración $i$):
+ * 4. Lógica del Loop (Iteración i):
         a. Obtener el valorActual (símbolo en la posición i).
         b. Obtener el valorSiguiente (símbolo en la posición i+1), si existe.
         c. Regla de Sustracción: Si el valorActual es menor que el valorSiguiente: Restar el valorActual del total (ej. si tienes 'I' antes de 'V').
@@ -35,7 +35,7 @@ namespace _01_Algoritmos_Y_Estructuras.LeetCode
 {
     public class RomanToInt
     {
-        public int solution(string s)
+        public int Solution(string s)
         {
             Dictionary<char, int> romanMap = new Dictionary<char, int>()
             {
@@ -43,26 +43,30 @@ namespace _01_Algoritmos_Y_Estructuras.LeetCode
                 {'C', 100}, {'D', 500}, {'M', 1000}
             };
             int total = 0;
+
             for( int i = 0; i < s.Length; i++)
             {
                 int valorActual = romanMap[s[i]];
+                // valida si existe un siguiente simbolo
                 if(i < s.Length - 1)
                 {
                     int valorSiguiente = romanMap[s[i + 1]];
+                    // Regla de substraccion: si el valor actual es menor que el siguiente restamos el valor actual al total
                     if(valorActual < valorSiguiente)
                     {
                         total -= valorActual;
                     }
+                    // Regla de adiccion: si el valor actual es igual o mayor al siguiente se suma al total
                     else
                     {
                         total += valorActual;
                     }
                 }
                 else
-                {
+                { // el ultimo valor siempre se suma al total
                     total += valorActual;
                 }
-            }
+            }// retornamos la suma total
             return total;
         }
     }
