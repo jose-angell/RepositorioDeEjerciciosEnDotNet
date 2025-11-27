@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk='Microsoft.NET.Sdk'>
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
@@ -9,18 +9,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="coverlet.collector" Version="6.0.2" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
-    <PackageReference Include="xunit" Version="2.9.2" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+    <PackageReference Include='coverlet.collector' Version='6.0.2' />
+    <PackageReference Include='Microsoft.NET.Test.Sdk' Version='17.12.0' />
+    <PackageReference Include='xunit' Version='2.9.2' />
+    <PackageReference Include='xunit.runner.visualstudio' Version='2.8.2' />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\02_Principios_SOLID_Y_Patrones\02_Principios_SOLID_Y_Patrones.csproj" />
+    <ProjectReference Include='..\02_Principios_SOLID_Y_Patrones\02_Principios_SOLID_Y_Patrones.csproj' />
   </ItemGroup>
 
   <ItemGroup>
-    <Using Include="Xunit" />
+    <Using Include='Xunit' />
   </ItemGroup>
 
 </Project>
