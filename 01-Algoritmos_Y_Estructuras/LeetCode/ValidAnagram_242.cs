@@ -23,5 +23,24 @@ namespace _01_Algoritmos_Y_Estructuras.LeetCode
             Array.Sort(tt);
             return new string(ss) == new string(tt);
         }
+        public bool IsAnagram2(string s, string t)
+        {
+            if (s.Length != t.Length) return false;
+            var charCount = new Dictionary<char, int>();
+            foreach (var c in s)
+            {
+                if (charCount.ContainsKey(c))
+                    charCount[c]++;
+                else
+                    charCount[c] = 1;
+            }
+            foreach (var c in t)
+            {
+                if (!charCount.ContainsKey(c)) return false;
+                charCount[c]--;
+                if (charCount[c] < 0) return false;
+            }
+            return true;
+        }
     }
 }
