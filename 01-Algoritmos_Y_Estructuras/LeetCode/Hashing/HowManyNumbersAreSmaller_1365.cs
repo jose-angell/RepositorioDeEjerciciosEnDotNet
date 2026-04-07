@@ -17,7 +17,7 @@ using System.Threading.Tasks;
  * 
  * 
  */
-namespace _01_Algoritmos_Y_Estructuras.LeetCode
+namespace _01_Algoritmos_Y_Estructuras.LeetCode.Hashing
 {
     public class HowManyNumbersAreSmaller_1365
     {
@@ -67,7 +67,7 @@ namespace _01_Algoritmos_Y_Estructuras.LeetCode
             {
                 count[i] += count[i - 1];
             }
-            for(int i = 0; i < nums.Length; i++)
+            for (int i = 0; i < nums.Length; i++)
             {
                 if (nums[i] != 0) nums[i] = count[nums[i] - 1];
             }

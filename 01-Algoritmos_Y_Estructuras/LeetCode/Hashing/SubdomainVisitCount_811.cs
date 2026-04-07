@@ -23,7 +23,7 @@ using System.Threading.Tasks;
  * 5. Retornar la lista de resultado.
  */
 
-namespace _01_Algoritmos_Y_Estructuras.LeetCode
+namespace _01_Algoritmos_Y_Estructuras.LeetCode.Hashing
 {
     public class SubdomainVisitCount_811
     {

@@ -22,7 +22,7 @@ using System.Threading.Tasks;
  * 
  */
 
-namespace _01_Algoritmos_Y_Estructuras.LeetCode
+namespace _01_Algoritmos_Y_Estructuras.LeetCode.Hashing
 {
     public class ContainsDuplicateII_219
     {
@@ -33,7 +33,7 @@ namespace _01_Algoritmos_Y_Estructuras.LeetCode
             {
                 if (dict.ContainsKey(nums[i]))
                 {
-                    if (Math.Abs((dict[nums[i]] - i)) <= k)
+                    if (Math.Abs(dict[nums[i]] - i) <= k)
                     {
                         return true;
                     }

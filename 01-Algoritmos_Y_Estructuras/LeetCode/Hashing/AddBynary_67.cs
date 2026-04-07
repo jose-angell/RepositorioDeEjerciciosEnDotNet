@@ -23,7 +23,7 @@ using System.Threading.Tasks;
  *
  * Nota: Se utiliza StringBuilder para construir el resultado de manera eficiente. 
  */
-namespace _01_Algoritmos_Y_Estructuras.LeetCode
+namespace _01_Algoritmos_Y_Estructuras.LeetCode.Hashing
 {
     public class AddBynary_67
     {
@@ -34,12 +34,12 @@ namespace _01_Algoritmos_Y_Estructuras.LeetCode
             int indexA = a.Length - 1;
             int indexB = b.Length - 1;
 
-            while (indexA >= 0 || indexB >=0 || carry > 0)
+            while (indexA >= 0 || indexB >= 0 || carry > 0)
             {
                 var BitA = indexA >= 0 ? a[indexA--] - '0' : 0;
                 var BitB = indexB >= 0 ? b[indexB--] - '0' : 0;
                 int total = BitA + BitB + carry;
-                sum = sum.Insert(0,(total % 2).ToString());
+                sum = sum.Insert(0, (total % 2).ToString());
                 carry = total / 2;
             }
 

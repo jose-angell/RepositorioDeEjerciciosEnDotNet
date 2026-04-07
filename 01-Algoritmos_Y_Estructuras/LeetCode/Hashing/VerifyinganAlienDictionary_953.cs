@@ -18,7 +18,7 @@ using System.Threading.Tasks;
  * 
  * 
  */
-namespace _01_Algoritmos_Y_Estructuras.LeetCode
+namespace _01_Algoritmos_Y_Estructuras.LeetCode.Hashing
 {
     public class VerifyinganAlienDictionary_953
     {

@@ -28,7 +28,7 @@ using System.Threading.Tasks;
  * 4. Retornar el contador como resultado, que representará el número de tripletas aritméticas encontradas en el array nums.
  * 
  */
-namespace _01_Algoritmos_Y_Estructuras.LeetCode
+namespace _01_Algoritmos_Y_Estructuras.LeetCode.Hashing
 {
     public class NumberOfArithmeticTriplets_2367
     {

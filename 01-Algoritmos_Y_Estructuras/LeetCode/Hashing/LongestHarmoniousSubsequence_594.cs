@@ -21,7 +21,7 @@ using System.Threading.Tasks;
  * 
  */
 
-namespace _01_Algoritmos_Y_Estructuras.LeetCode
+namespace _01_Algoritmos_Y_Estructuras.LeetCode.Hashing
 {
     public class LongestHarmoniousSubsequence_594
     {
@@ -36,7 +36,7 @@ namespace _01_Algoritmos_Y_Estructuras.LeetCode
             int max = 0;
             foreach (var d in dict)
             {
-                if (dict.ContainsKey(d.Key + 1) && (d.Value + dict[d.Key + 1]) > max)
+                if (dict.ContainsKey(d.Key + 1) && d.Value + dict[d.Key + 1] > max)
                 {
                     max = d.Value + dict[d.Key + 1];
                 }

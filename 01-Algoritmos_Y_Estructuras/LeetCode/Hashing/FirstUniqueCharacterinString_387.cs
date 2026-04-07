@@ -17,7 +17,7 @@ using System.Threading.Tasks;
  * 4. Recorrer el string nuevamente para encontrar el primer caracter con un contador de 1 en el diccionario.
  * 5.Retornar el indice de este caracter. Si no se encuentra ningun caracter unico, retornar -1.
  */
-namespace _01_Algoritmos_Y_Estructuras.LeetCode
+namespace _01_Algoritmos_Y_Estructuras.LeetCode.Hashing
 {
     public class FirstUniqueCharacterinString_387
     {

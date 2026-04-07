@@ -15,7 +15,7 @@ using System.Threading.Tasks;
  * 4. Si el ciclo termina retornar true.
  */
 
-namespace _01_Algoritmos_Y_Estructuras.LeetCode
+namespace _01_Algoritmos_Y_Estructuras.LeetCode.Hashing
 {
     public class CheckIfSentenceIsParagram_1832
     {

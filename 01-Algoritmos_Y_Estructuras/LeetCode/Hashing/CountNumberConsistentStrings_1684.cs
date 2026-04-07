@@ -19,7 +19,7 @@ using System.Threading.Tasks;
  * 5. Retornar el contador de palabras consistentes
  */
 
-namespace _01_Algoritmos_Y_Estructuras.LeetCode
+namespace _01_Algoritmos_Y_Estructuras.LeetCode.Hashing
 {
     public class CountNumberConsistentStrings_1684
     {
