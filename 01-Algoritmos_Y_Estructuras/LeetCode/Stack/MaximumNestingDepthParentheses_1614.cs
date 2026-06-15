@@ -30,5 +30,25 @@ namespace _01_Algoritmos_Y_Estructuras.LeetCode.Stack
             }
             return max;
         }
+        public int MaxDepthStack(string s)
+        {
+            int maxdepth = 0;
+            Stack<char> stack = new Stack<char>();
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] == '(')
+                {
+                    stack.Push('(');
+                }
+                else if (s[i] == ')')
+                {
+                    maxdepth = Math.Max(maxdepth, stack.Count);
+                    stack.Pop();
+                }
+            }
+
+            return maxdepth;
+
+        }
     }
 }
