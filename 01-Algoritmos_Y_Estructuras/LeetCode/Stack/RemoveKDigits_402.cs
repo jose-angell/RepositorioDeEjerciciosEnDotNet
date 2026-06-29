@@ -52,6 +52,7 @@ namespace _01_Algoritmos_Y_Estructuras.LeetCode.Stack
             char[] charArray = sb.ToString().ToCharArray();
             Array.Reverse(charArray);
 
+
             int startIndex = 0;
             while (startIndex < charArray.Length && charArray[startIndex] == '0')
             {
@@ -61,6 +62,70 @@ namespace _01_Algoritmos_Y_Estructuras.LeetCode.Stack
             if (startIndex == charArray.Length) return "0";
 
             return new string(charArray, startIndex, charArray.Length - startIndex);
+        }
+        public string RemoveKdigits2(string num, int k)
+        {
+            if (num.Length == k) return "0";
+            Stack<char> stack = new Stack<char>();
+
+            foreach (char digit in num)
+            {
+                while (k > 0 && stack.Count > 0 && stack.Peek() > digit)
+                {
+                    stack.Pop();
+                    k--;
+                }
+                stack.Push(digit);
+            }
+
+            while (k > 0 && stack.Count > 0)
+            {
+                stack.Pop();
+                k--;
+            }
+
+            StringBuilder sb = new StringBuilder();
+            while (stack.Count > 0)
+            {
+                sb.Insert(0, stack.Pop());
+            }
+
+            string result = new string(sb.ToString().TrimStart('0'));
+
+            return result == "" ? "0" : result;
+
+        }
+        public string RemoveKdigits3(string num, int k)
+        {
+            if (num.Length == k) return "0";
+            Stack<char> stack = new Stack<char>();
+
+            foreach (char digit in num)
+            {
+                while (k > 0 && stack.Count > 0 && stack.Peek() > digit)
+                {
+                    stack.Pop();
+                    k--;
+                }
+                stack.Push(digit);
+            }
+
+            while (k > 0 && stack.Count > 0)
+            {
+                stack.Pop();
+                k--;
+            }
+
+            StringBuilder sb = new StringBuilder();
+            while (stack.Count > 0)
+            {
+                sb.Insert(0, stack.Pop());
+            }
+
+            var cleanArray = sb.ToString().SkipWhile(c => c == '0').ToArray();
+
+            return cleanArray.Length == 0 ? "0" : new string(cleanArray);
+
         }
     }
 }
